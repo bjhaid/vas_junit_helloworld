@@ -11,4 +11,11 @@ public class HelloWorldTest extends TestCase {
     helloWorld = new HelloWorld();
     assertEquals("Hello World!", helloWorld.sayHelloWorld());
   }
+
+  @Test
+  public void testSayHelloWorldToName() {
+    helloWorld = new HelloWorld();
+    helloWorld.setName("Ayo");
+    assertEquals(("Hello World! Ayo"), helloWorld.sayHelloWorld());
+  }
 }
